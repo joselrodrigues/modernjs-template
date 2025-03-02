@@ -7,8 +7,8 @@
     "build": "modern build",
     "start": "modern start",
     "serve": "modern serve",
+    "lint": "eslint . && prettier --check .",
     "new": "modern new",
-    "lint": "biome check",
     "prepare": "simple-git-hooks",
     "upgrade": "modern upgrade"
   },
@@ -17,7 +17,7 @@
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-      "biome check --files-ignore-unknown=true"
+      ""
     ]
   },
   "simple-git-hooks": {
@@ -29,18 +29,20 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
     "@eslint/js": "^9.21.0",
     "@modern-js/app-tools": "2.65.2",
     "@modern-js/tsconfig": "2.65.2",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/jest": "~29.2.4",
     "@types/node": "~18.11.9",
     "@types/react": "^18.3.11",
     "@types/react-dom": "~18.3.1",
     "eslint": "^9.21.0",
+    "eslint-config-prettier": "10.0.2",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^16.0.0",
     "lint-staged": "~15.4.0",
+    "prettier": "3.5.2",
     "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
     "typescript": "~5.7.3",

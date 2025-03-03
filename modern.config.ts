@@ -6,6 +6,12 @@ export default defineConfig({
   runtime: {
     router: true,
   },
+  dev: {
+    port: 3000,
+  },
+  server: {
+    // ssr: true,
+  },
   plugins: [
     appTools({
       bundler: 'rspack', // Set to 'webpack' to enable webpack

@@ -20,7 +20,7 @@
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-      "yarn run lint"
+      "sh -c 'yarn run lint && yarn run test'"
     ]
   },
   "simple-git-hooks": {

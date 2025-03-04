@@ -1,4 +1,5 @@
 {
+  "cSpell.diagnosticLevel": "Hint",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {

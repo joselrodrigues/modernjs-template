@@ -1,6 +1,9 @@
+import { Link } from '@modern-js/runtime/router';
+
 const Index = () => (
-  <div className="container-box">
-    <main></main>
+  <div>
+    <h1>Home</h1>
+    <Link to="/about">About</Link>
   </div>
 );
 
